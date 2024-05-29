@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page!</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>LIST PRODUCT!</h1>
+        <h3 id="result" class="text-success"></h3>
+        <form>
+            <table class="table table-bordered">
+                <tr>
+                    <td>Product Id</td>
+                    <td><input type="text" id="proId" readonly></td>
+                </tr>
+                <tr>
+                    <td>Product Name</td>
+                    <td><input type="text" id="proName" placeholder="Product Name"></td>
+                </tr>
+                <tr>
+                    <td>Producer</td>
+                    <td><input type="text" id="producer" placeholder="Producer"></td>
+                </tr>
+                <tr>
+                    <td>Year Making</td>
+                    <td><input type="number" id="yearMaking" placeholder="Year Making"></td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td><input type="number" id="price" placeholder="Price"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button id="add">Add</button></td>
+                </tr>
+            </table>
+        </form>
+        <table class="table table-bordered">
+            <thead>
+                <th>Product Id</th>
+                <th>Product Name</th>
+                <th>Producer</th>
+                <th>Year Making</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </thead>
+            <tbody id="list_product">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/product.js"></script>
+</body>
+</html>
